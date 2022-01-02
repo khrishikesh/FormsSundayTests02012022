@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+    body{
+    background-color: #6a097d;
+    }
+
+    form li{
+    list-style-type: none;
+    }
+
+    .container{
+    background-color: white;    
+    padding: 20px;
+    border-radius: 4px;
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+    width: fit-content;
+    }
+
+    h1{
+    text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form method="get">
+        <ul>
+          <li><label for="Userid">Userid:</label></li>
+          <li><input type="text" name="userId" size="12" required /></li>
+          <br>
+          <li><label for="passid">Password:</label></li>
+          <li><input type="password" name="passid" size="12" required /></li>
+          <br>
+          <li><label for="name">Name:</label></li>
+          <li><input type="text" name="name" required /></li>
+          <br>
+          <li><label for="add">Address:</label></li>
+          <li>
+            <input
+              type="text"
+              name="address"
+              placeholder="Eg: #1, North Street, Chennai - 11 "
+            />
+          </li>
+          <br>
+          <li><label for="add">Country:</label></li>
+          <li>
+            <select list="country" name="countries">
+              <option selected="" value="Default">
+                (Plese select a Country)
+              </option>
+              <option value="America">America</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="India">India</option>
+              <option value="Malaysia">Malaysia</option>
+            </select>
+          </li>
+          <br>
+          <li><label for="zip">ZIP:</label></li>
+          <li><input type="text" name="zipcode" required /></li>
+          <br>
+          <li><label for="emailid">Email:</label></li>
+          <li><input type="email" name="email" required /></li>
+          <br>
+          <li><label id="gender">Sex:</label></li>
+          <li>
+            <input type="radio" name="sex" value="Male" /><span>Male</span>
+          </li>
+          <li>
+            <input type="radio" name="sex" value="female" /><span>Female</span>
+          </li>
+          <br>
+          <li><label>Language:</label></li>
+          <li>
+            <input type="checkbox" name="langen" value="en" /><span>English</span></li>
+          <li>
+            <input type="checkbox" name="langnen" value="noen" /><span>Non English</span>
+          </li>
+          <br>
+          <li>
+            <input
+              type="submit"
+              name="submit"
+              value="Submit"
+              style="background-color: #6a097d; color: white"
+            />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
